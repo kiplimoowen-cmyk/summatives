@@ -1,11 +1,11 @@
 # summatives
-# EcoSort: Intelligent Waste Management Assistant ♻️🤖
+# EcoSort: Intelligent Waste Management Assistant
 
 EcoSort is an end-to-end, multi-modal intelligent assistant developed in partnership with Metro City's waste management department. Designed to optimize residential recycling and minimize sorting friction at municipal facilities, the system processes both image uploads and natural language descriptions to predict waste categories and dynamically retrieve structured local disposal policies.
 
 ---
 
-## 🚀 Project Architecture & Key Features
+##  Project Architecture & Key Features
 
 ```
                      +----------------------+
@@ -57,9 +57,9 @@ EcoSort is an end-to-end, multi-modal intelligent assistant developed in partner
 
 ---
 
-## 📊 Performance & Evaluation Metrics
+##  Performance & Evaluation Metrics
 
-### 🖼️ Deep Learning Vision Pipeline (RealWaste Dataset)
+###  Deep Learning Vision Pipeline (RealWaste Dataset)
 - **Dataset Volume**: 4,752 waste material images spanning 9 classes.
 - **Transfer Learning Accuracy**: ~80.43% 
 - **Fine-Tuned System Accuracy**: **87.08%**
@@ -68,17 +68,16 @@ EcoSort is an end-to-end, multi-modal intelligent assistant developed in partner
   - **Food Organics**: 0.85 Precision / 0.97 Recall (0.91 F1-Score)
   - **Metal**: 0.93 Precision / 0.89 Recall (0.91 F1-Score)
 
-### 📝 Text Classification NLP Pipeline
+### Text Classification NLP Pipeline
 - **Dataset Volume**: 4,993 clean user descriptions.
 - **Accuracy**: **99.60%** (near-perfect classification with only 4 minor word-overlap edge cases across the entire test subset).
 - **Macro F1-Score**: 1.00
 
-### 🔍 Semantic Policy Retrieval
+### Semantic Policy Retrieval
 - Successfully retrieved the correct policy documents across all validated target classes with high-confidence cosine similarity margins (e.g., **Paper: 0.902**, **Cardboard: 0.803**).
 
----
 
-## 🛠️ Tech Stack & Libraries Used
+## Tech Stack & Libraries Used
 
 - **Framework**: `TensorFlow` / `Keras` (Computer Vision model development & training)
 - **Transformer SDK**: `Hugging Face Transformers` / `PyTorch` (Seq2Seq text generation with FLAN-T5)
@@ -88,7 +87,7 @@ EcoSort is an end-to-end, multi-modal intelligent assistant developed in partner
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 ├── data/
 │   ├── realwaste_data/             # RealWaste classification images
